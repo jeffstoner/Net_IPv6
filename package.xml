@@ -18,8 +18,8 @@
  <date>2015-06-14</date>
  <time>015:30:00</time>
  <version>
-  <release>1.3.0b1</release>
-  <api>1.2.2</api>
+  <release>2.0.0</release>
+  <api>2.0.0</api>
  </version>
  <stability>
   <release>beta</release>
@@ -27,13 +27,11 @@
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
  <notes>
-#20558 String offset cast occurred
-Use static keyword for class method declarations
-Use public/protected keyword class method declarations
- </notes>
+Converted to throw exceptions rather than use PEAR::raiseError. This breaks backwards compatibility.
+</notes>
  <contents>
   <dir baseinstalldir="/" name="/">
-   <file baseinstalldir="/" md5sum="e27f6754251faa2ab95eadc8da185845" name="Net/IPv6.php" role="php" />
+   <file baseinstalldir="/" md5sum="d3e4f347312d6ea33b5a9a7f71419684" name="Net/IPv6.php" role="php" />
    <file baseinstalldir="Net" md5sum="62bf24bd1e9d4dc0cfbd25b433026e71" name="tests/AllTests.php" role="test" />
   </dir>
  </contents>
@@ -410,5 +408,20 @@ Fixed:
 #16220  using the wrong variable in _bin2Ip
    </notes>
   </release>
- </changelog>
+  <release>
+   <version>
+    <release>2.0.0</release>
+    <api>2.0.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2015-12-11</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD</license>
+   <notes>
+Converted to throw exceptions rather than use PEAR::raiseError. This breaks backwards compatibility.
+   </notes>
+  </release>
+</changelog>
 </package>
